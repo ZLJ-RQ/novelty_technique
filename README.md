@@ -7,3 +7,6 @@
 #2 策略模式
 策略模式三要素:抽象策略类,策略接口,策略控制类
 涉及:cn/tech/novelty/discount
+# 3 策略枚举+工厂模式
+传入type获得策略枚举,通过工厂模式创建策略对象
+涉及:DiscountFactory DiscountEnum
