@@ -3,7 +3,7 @@ package cn.tech.novelty.discount;
 import java.math.BigDecimal;
 /**
  * @author zhanglj
- * @desciption 原价购买
+ * @desciption 固定金额购买
  */
 public class NYGCouponDiscount implements ICouponDiscount<Double> {
 
@@ -13,7 +13,7 @@ public class NYGCouponDiscount implements ICouponDiscount<Double> {
      */
     @Override
     public BigDecimal discountAmount(Double couponInfo, BigDecimal skuPrice) {
-        return new BigDecimal(couponInfo);
+        return new BigDecimal(couponInfo.toString());
     }
 
 }

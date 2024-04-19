@@ -14,7 +14,7 @@ public class ZJCouponDiscount implements ICouponDiscount<Double>{
      */
     @Override
     public BigDecimal discountAmount(Double couponInfo, BigDecimal skuPrice) {
-        BigDecimal discountAmount = skuPrice.subtract(new BigDecimal(couponInfo));
+        BigDecimal discountAmount = skuPrice.subtract(new BigDecimal(couponInfo.toString()));
         if (discountAmount.compareTo(BigDecimal.ZERO)<1) {
             return BigDecimal.ONE;
         }
